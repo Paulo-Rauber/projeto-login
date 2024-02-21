@@ -35,6 +35,7 @@ section#login{
 
     transition: width 1s, height 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
@@ -58,6 +59,7 @@ div#formulario > p{
 }
 form > div.campo{
     background-color: #5f2c82;
+    
     width: 100%;
     display: block;
     height: 29px;
@@ -66,6 +68,27 @@ form > div.campo{
 }
 div.campo > label{
     display: none;
+}
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    text-align: center;
+    width: 40px;
+    padding: 2.5px;
+}
+div.campo > input{
+    background-color: #97eeec;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border-radius: 6px;
+    padding: 3px;
+    /*Sempre que tiver um animação, um transform para fazer, colocar na última linha.*/
+    transform: translateY(-5.7px);
+}
+div.campo > input:focus-within{
+    background-color: white;
 }
 form > input[type=submit]{
     display: block;
